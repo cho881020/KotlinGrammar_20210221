@@ -46,6 +46,17 @@ class MainActivity : AppCompatActivity() {
 //            messageTxt의 문구로 반영.
             messageTxt.text = inputMessage
 
+//            적힌 문구가 "안녕하세요" or "반갑습니다" 라면 => 로그로 "인사문구 입력됨" 출력
+//            그렇지 않다면 =>  로그로 "일반문구 입력됨" 출력
+
+            if (inputMessage == "안녕하세요" || inputMessage == "반갑습니다") {
+                Log.d("메인화면", "인사문구 입력됨")
+            }
+            else {
+                Log.d("메인화면", "일반문구 입력됨")
+            }
+
+
         }
 
     }
